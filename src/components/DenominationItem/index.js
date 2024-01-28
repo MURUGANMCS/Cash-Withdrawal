@@ -3,15 +3,16 @@ import './index.css'
 
 const DenominationItem = props => {
   const {denominationsListValue, withdrawalAmount} = props
+  const {value}=denominationsListValue
 
   const onWithdrwaAmount = () => {
-    withdrawalAmount(denominationsListValue)
+    withdrawalAmount(value)
   }
 
   return (
     <li className="list-container">
       <button type="button" onClick={onWithdrwaAmount} className="withdraw-btn">
-        {denominationsListValue}
+        {value}
       </button>
     </li>
   )
