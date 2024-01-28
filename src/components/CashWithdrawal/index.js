@@ -6,10 +6,7 @@ import DenominationItem from '../DenominationItem'
 import './index.css'
 
 class CashWithdrawal extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {denominationsList: props.denominationsList, balance: 2000}
-  }
+  state = {balance: 2000}
 
   withdrawalAmount = value => {
     const {balance} = this.state
@@ -19,14 +16,16 @@ class CashWithdrawal extends Component {
   }
 
   render() {
-    const {denominationsList, balance} = this.state
-
+    const {denominationsList} = this.props
+    const {balance} = this.state
+    const name = 'Sarah Williams'
+    const initial = name.slice(0, 1)
     return (
       <div className="bg-container">
         <div className="card-container">
           <div className="profile-container">
-            <p className="logo">S</p>
-            <p className="user-name">Sarah Williams</p>
+            <p className="logo">{initial}</p>
+            <p className="user-name">{name}</p>
           </div>
 
           <div className="balance-container">
@@ -44,7 +43,7 @@ class CashWithdrawal extends Component {
             <ul className="list-container">
               {denominationsList.map(list => (
                 <DenominationItem
-                  denominationsListValue={list.value}
+                  denominationsListValue={list}
                   key={list.id}
                   withdrawalAmount={this.withdrawalAmount}
                 />
