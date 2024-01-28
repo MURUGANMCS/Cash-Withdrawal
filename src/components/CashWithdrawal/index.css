@@ -1,0 +1,109 @@
+/* Write your CSS here */
+* {
+  font-family: roboto;
+}
+.bg-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  background-color: #150b3e;
+  padding: 30px;
+  border-radius: 10px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  padding-top: 15px;
+  border-radius: 25px;
+  color: #585076;
+  background-color: #c7d2fe;
+  text-align: center;
+  margin-right: 20px;
+}
+.user-name {
+  color: #ffffff;
+}
+.balance-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.your-balance-details {
+  color: #585076;
+  font-size: 20px;
+}
+.balance-amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.your-balance-details-in-rupees {
+  color: #585076;
+  margin-top: 0px;
+  font-size: 15px;
+}
+.amount {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.withdraw {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
+.sum-in-rupees-details {
+  color: #585076;
+}
+.list-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+    padding-top: 35px;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+  .user-name{
+    font-size: 40px;
+  }
+  .amount{
+    font-size: 40px;
+
+  }
+  .your-balance-details{
+    font-size: 40px;
+  }
+  .your-balance-details-in-rupees{
+    font-size: 30px;
+  }
+  .withdraw{
+    font-size: 40px;
+  }
+  .sum-in-rupees-details{
+    font-size: 35px;
+  }
+
+}

@@ -1,0 +1,32 @@
+/* Write your CSS here */
+* {
+  font-family: roboto;
+}
+.withdraw-btn {
+  width: 90px;
+  height: 30px;
+  background-color: #585076;
+  color: #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 0px;
+  
+}
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width:768px){
+  .withdraw-btn{
+    width:200px;
+    height: 50px;
+    font-size: 30px;
+
+  }
+}
